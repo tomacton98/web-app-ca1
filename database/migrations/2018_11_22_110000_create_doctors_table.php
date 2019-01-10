@@ -18,7 +18,6 @@ class CreateDoctorsTable extends Migration
             $table->string('postal_address');
             $table->string('phone')->unique();
             $table->string("date_started");
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

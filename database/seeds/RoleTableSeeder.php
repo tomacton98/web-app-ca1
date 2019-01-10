@@ -12,14 +12,9 @@ class RoleTableSeeder extends Seeder
      */
     public function run()
     {
-      $role_patient = new Role();
-      $role_patient->name = 'patient';
-      $role_patient->description = 'A Patient User';
-      $role_patient->save();
-
-      $role_manager = new Role();
-      $role_manager->name = 'doctor';
-      $role_manager->description = 'A Doctor User';
-      $role_manager->save();
+      $role_admin = new Role();
+      $role_admin->name = 'admin';
+      $role_admin->description = 'An administrator';
+      $role_admin->save();
     }
 }

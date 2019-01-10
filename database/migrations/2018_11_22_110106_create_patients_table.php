@@ -20,7 +20,6 @@ class CreatePatientsTable extends Migration
             $table->boolean('insurance');
             $table->string('insurer')->nullable();
             $table->string('policy')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
 
         });
     }
