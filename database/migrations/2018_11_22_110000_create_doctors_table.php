@@ -15,6 +15,7 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
             $table->string('postal_address');
             $table->string('phone')->unique();
             $table->string("date_started");

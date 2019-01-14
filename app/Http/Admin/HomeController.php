@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Doctor;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('role:doctor');
+        $this->middleware('role:admin');
     }
 
     /**
@@ -25,6 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('doctor.home');
+        return view('admin.home');
     }
 }
